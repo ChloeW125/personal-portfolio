@@ -2,7 +2,7 @@
     background: #fbf4e5;
     width: 150px;
     height:100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
     min-height: 500px;
@@ -85,5 +85,38 @@
             }
         }
 
+        a.active {
+            svg {
+                color: #ffd700;
+            }
+        }
+
+    }
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 32px;
+                line-height: 16px;
+
+                &:hover svg {
+                    color: #ffd700
+                }
+            }
+        }
+
+        li::marker {
+            color: #fbf4e5;
+        }
     }
 }
