@@ -1,16 +1,37 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import cLetter from '../../assets/images/c.png';
+import AnimatedLetters from '../animatedLetters';
 import './index.scss';
 
 const Home  = () => {
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const nameArray = ['h', 'l', 'o', 'e']
+    const titleArray = "Aspiring software developer".split("")
+
+    // useEffect(() => {
+    //     return setTimeout(() => {
+    //         setLetterClass('text-animate-hover')
+    //     }, 4000)
+    // }, [])
+
     return(
         <div className="container home-page">
             <div className="text-zone">
-                <h1>Hi, <br /> I'm
+                <h1>
+                <span className={letterClass}>H</span> 
+                <span className={`${letterClass} _12`}>i,</span> 
+                <br />
+                <span className={`${letterClass} _13`}>I</span> 
+                <span className={`${letterClass} _14`}>'m,</span> 
                 <img src={cLetter} alt="developer" />
-                hloe
+                <AnimatedLetters letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}/>
                 <br/>
-                Aspiring software developer
+                <AnimatedLetters letterClass={letterClass}
+                strArray={titleArray}
+                idx={22}/>
                 </h1>
                 <h2>Full-Stack Developer / Machine Learning Enthusiast / Book Connoiseur</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
