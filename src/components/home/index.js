@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import cLetter from '../../assets/images/c.png';
 import AnimatedLetters from '../animatedLetters';
+// import Logo from './logo'
 import './index.scss';
 
 const Home  = () => {
@@ -9,11 +10,13 @@ const Home  = () => {
     const nameArray = ['h', 'l', 'o', 'e']
     const titleArray = "Aspiring software developer".split("")
 
-    // useEffect(() => {
-    //     return setTimeout(() => {
-    //         setLetterClass('text-animate-hover')
-    //     }, 4000)
-    // }, [])
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+
+        return () => clearTimeout(timer)
+    }, [])
 
     return(
         <div className="container home-page">
@@ -36,6 +39,7 @@ const Home  = () => {
                 <h2>Full-Stack Developer / Machine Learning Enthusiast / Book Connoiseur</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            {/* <Logo /> */}
         </div>
     )
 }
