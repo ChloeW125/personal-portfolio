@@ -1,12 +1,22 @@
-html {
+html, body {
   font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, .headline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
-  background: #accfd1;
+  background: radial-gradient(circle at 20% 20%, #cfe5e2, #6b78a2);
+  /* background: #accfd1; */
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;

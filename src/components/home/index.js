@@ -7,7 +7,7 @@ import './index.scss';
 
 const Home  = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['h', 'l', 'o', 'e']
+    const nameArray = ['', 'C', 'h', 'l', 'o', 'e']
     const titleArray = "Aspiring software developer".split("")
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const Home  = () => {
                 <br />
                 <span className={`${letterClass} _13`}>I</span> 
                 <span className={`${letterClass} _14`}>'m</span> 
-                <img src={cLetter} alt="developer" />
+                {/* <img src={cLetter} alt="developer" /> */}
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
                 idx={15}/>
@@ -36,7 +36,11 @@ const Home  = () => {
                 strArray={titleArray}
                 idx={22}/>
                 </h1>
-                <h2>Full-Stack Developer / Machine Learning Enthusiast / Book Connoiseur</h2>
+                <div className="badges">
+                    <span className="badge">Full-Stack Dev</span>
+                    <span className="badge">ML Enthusiast</span>
+                    <span className="badge">Bookworm 📚</span>
+                </div>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             {/* <Logo /> */}
