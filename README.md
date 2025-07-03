@@ -1,6 +1,8 @@
 # Personal Portfolio
 
-More to come!
+Personal portfolio sideproject to give an overview of my portfolio as an aspiring software developed, and practice my web dev skills while I'm at it!
+
+Created using React and assets from fortawesome and Google Fonts
 
 ## Credits
 
