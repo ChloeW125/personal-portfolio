@@ -54,7 +54,7 @@ const About = () => {
                     diving into manhwas, watching anime and K-dramas, and convincing my brother that Brooklyn Nine-Nine is, in fact, better than The Rookie.
                 </p>
                 <p>I'm just getting started in the tech world and excited to explore new roles and opportunities as I grow within the community. Feel free 
-                    to reach out through the Contact page—I’d love to hear from you!</p>
+                    to reach out through the Contact page - I’d love to hear from you!</p>
             </div>
             <div className="stage-cube-container">
                 <div className="cubespinner">
