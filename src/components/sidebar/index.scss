@@ -103,11 +103,17 @@
             }
         }
 
-        a.contact-link {
+        a.projects-link {
             &:after {
-                content: 'Contact';
+                content: 'Projects';
             }
         }
+
+        // a.contact-link {
+        //     &:after {
+        //         content: 'Contact';
+        //     }
+        // }
 
         a.active {
             svg {
