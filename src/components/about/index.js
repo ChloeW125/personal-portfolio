@@ -25,7 +25,7 @@ const About = () => {
                         idx={15}/>
                 </h1>
                 <p>Hi! I'm Chloe, a second-year Computer Science student at the University of Waterloo. 
-                    Happy to have you land on my page—whether on purpose or by accident!</p>
+                    Happy to have you land on my page - whether on purpose or by accident!</p>
                 <p>I'm passionate about building meaningful tech, with a strong interest in full-stack 
                     software development, machine learning, and project management. Right now, I'm working on two projects:</p>
                 <ul>
@@ -33,7 +33,7 @@ const About = () => {
                         An AI-powered plant doctor app that helps gardeners detect and treat plant diseases.
                     </li>
                     <li>
-                        A machine learning–powered medical insurance prediction app, designed to help 
+                        A machine learning-powered medical insurance prediction app, designed to help 
                         individuals estimate their fees and to serve as an opportunity for me to explore potential bias in ML algorithms and how to minimize it.
                     </li>
                 </ul>

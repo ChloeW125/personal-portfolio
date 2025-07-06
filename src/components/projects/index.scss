@@ -1,0 +1,23 @@
+.projects-page {
+  max-width: 88%; 
+  padding-left: 8%;
+  padding-right: 2rem;
+  padding-top: 3rem;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2a3c3d;
+    margin-bottom: 2rem;
+  }
+
+  .projects-display {
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - 2 * 2rem) / 3));
+    gap: 2rem;
+  }
+
+  .project-card:nth-child(3n+2) {
+    transform: translateY(20px); 
+  }
+}
