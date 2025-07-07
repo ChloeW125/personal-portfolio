@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Allows us to use routes in app */}
-    <BrowserRouter>
+    <BrowserRouter basename="/personal-portfolio">
       <App />
     </BrowserRouter>
   </React.StrictMode>
