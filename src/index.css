@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 
 h1, h2, h3, .headline {
@@ -16,6 +17,10 @@ body {
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
   background: radial-gradient(circle at 20% 20%, #cfe5e2, #6b78a2);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
   /* background: #accfd1; */
   overflow: hidden;
   display: block;

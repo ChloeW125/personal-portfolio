@@ -41,7 +41,7 @@ const Home  = () => {
                     <span className="badge">ML Enthusiast</span>
                     <span className="badge">Bookworm 📚</span>
                 </div>
-                <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                {/* <Link to="/contact" className='flat-button'>CONTACT ME</Link> */}
             </div>
             {/* <Logo /> */}
         </div>
