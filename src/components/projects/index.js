@@ -35,7 +35,7 @@ const projects= [
   {
     title: '💻 Personal Portfolio',
     description: "The very website you're looking at right now!",
-    link: 'https://your-portfolio-link.com',
+    link: 'https://github.com/ChloeW125/personal-portfolio',
     tags: ['React', 'JavaScript', 'HTML', 'CSS', 'Web Design'],
     color:'#f4f5c2',
   },
